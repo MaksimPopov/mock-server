@@ -21,7 +21,7 @@ This piece of code can be used by front-end developers to create basic API serve
       test: "This is a test route"
     }
   }
-];
+]
 ```
 
 - Now you can try to create a request to `http://localhost:6969/test`
