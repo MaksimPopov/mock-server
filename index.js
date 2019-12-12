@@ -14,7 +14,7 @@ if (config && config.length > 0) {
   console.error("\nconfig.json is empty");
 }
 
-const port = 1488;
+const port = 6969;
 
 app.listen(port, () => {
   console.log("\x1b[36m", `\n[server] App runs on port ${port}`);
