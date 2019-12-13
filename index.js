@@ -1,12 +1,13 @@
 "use strict";
 
-const fs = require("fs");
+const config = require("./config/config");
 const express = require("express");
 const app = express();
+const cors = require("cors");
+
 const createRoutes = require("./lib/createRoutes");
 
-let jsonData = fs.readFileSync("./config/config.json");
-let config = JSON.parse(jsonData);
+app.use(cors());
 
 if (config && config.length > 0) {
   createRoutes({ app, config });
@@ -17,5 +18,5 @@ if (config && config.length > 0) {
 const port = 6969;
 
 app.listen(port, () => {
-  console.log("\x1b[36m", `\n[server] App runs on port ${port}`);
+  console.log("\x1b[36m", `\n[mock-server] App runs on port ${port}\n`);
 });
