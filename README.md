@@ -15,10 +15,10 @@ This piece of code can be used by front-end developers to create basic API serve
 ```javascript
 [
   {
-    "route": "/test",
-    "method": "get",
-    "output": {
-      "test": "This is a test route"
+    route: "/hello_world",
+    method: "get",
+    output: {
+      test: "hello world"
     }
   }
 ]
