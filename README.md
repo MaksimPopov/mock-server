@@ -9,7 +9,7 @@ This piece of code can be used by front-end developers to create basic API serve
 - Install dependencies
   `$ npm install`
 
-- Open config.json
+- Open config.js
 - Add new route to array, by creating object with **"route"** , **"method"** , **"output"** keys:
 
 ```javascript
