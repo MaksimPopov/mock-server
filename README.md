@@ -67,7 +67,7 @@ While request body looks like this:
   {
     name: "Human Beign",
     moreInfo: {
-      phone: "+380932070487"
+      phone: "+1234567890"
     }
   }
 ```
