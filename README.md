@@ -36,8 +36,10 @@ const config = [
 ### Variables
 Variables are taken from what user sends to the server.
 You can use:
-`{{body.<your variable>}}` - body of a request
-`{{query.<your variable>}}` - url querry of a request (eg. `http://127.0.0.1:6969/example?<your variable>=<value>`)
+
+- `{{body.<your variable>}}` - body of a request
+
+- `{{query.<your variable>}}` - url querry of a request (eg. `http://127.0.0.1:6969/example?<your variable>=<value>`)
 
 Variables are used only in `output`
 
