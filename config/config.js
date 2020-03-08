@@ -1,9 +1,19 @@
 const config = [
   {
-    route: "/hello_world",
+    route: "/ping",
     method: "get",
+    output: "pong"
+  },
+  {
+    route: "/example",
+    method: "post",
     output: {
-      test: "hello world"
+      statusMessage: "success",
+      userInfo: {
+        name: "{{body.name}}",
+        phoneNumber: "{{body.moreInfo.phone}}"
+      }
+      
     }
   }
 ];
