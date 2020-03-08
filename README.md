@@ -62,23 +62,23 @@ module.exports = config;
 
 While request body looks like this: 
 ```javascript
-{
-	"name": "Human Beign",
-	"moreInfo": {
-		"phone": "+380932070487"
-	}
-}
+  {
+    name: "Human Beign",
+    moreInfo: {
+      phone: "+380932070487"
+    }
+  }
 ```
 
 The response will be:
 ```javascript
-{
-    "statusMessage": "success",
-    "userInfo": {
-        "name": "Human Beign",
-        "phoneNumber": "+380932070487"
+  {
+    statusMessage: "success",
+    userInfo: {
+      name: "Human Beign",
+      phoneNumber: "+1234567890"
     }
-}
+  }
 ```
 
 >check ./examples/index.html to have a closer look on variables
