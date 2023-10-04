@@ -13,7 +13,7 @@ config && config.length > 0
   ? createRoutes({ app, config })
   : console.error("\nconfig.js is empty");
 
-const port = 6969;
+const port = 1488;
 app.listen(port, () => {
   console.log("\x1b[36m", `\n[mock-server] App runs on port ${port}\n`);
 });

@@ -10,8 +10,8 @@ const config = [
     output: {
       statusMessage: "success",
       userInfo: {
-        name: "{{body.name}}",
-        phoneNumber: "{{body.moreInfo.phone}}"
+        name: "Pes patron",
+        phoneNumber: "+1488"
       }
       
     }
