@@ -2,20 +2,18 @@ const homepageData = {
   message: "success",
   hubs: [
     {
-      type: "high_emphasis",
-      data: [
-        {
-          title: "Oppenheimer",
-          date: "20.07.2023",
-          cover:
-            "https://images.bauerhosting.com/empire/2022/07/oppenheimer-poster-crop.jpg?ar=16%3A9&fit=crop&crop=top&auto=format&w=undefined&q=80",
-          subtitle:
-            "The story of American scientist, J. Robert Oppenheimer, and his role in the development of the atomic bomb.",
-        },
-      ],
+      type: "emphasis",
+      data: {
+        title: "Oppenheimer",
+        date: "20.07.2023",
+        cover:
+          "https://images.bauerhosting.com/empire/2022/07/oppenheimer-poster-crop.jpg?ar=16%3A9&fit=crop&crop=top&auto=format&w=undefined&q=80",
+        subtitle:
+          "The story of American scientist, J. Robert Oppenheimer, and his role in the development of the atomic bomb.",
+      },
     },
     {
-      type: "standard_row",
+      type: "row",
       title: "Most Popular",
       data: [
         {
@@ -46,7 +44,7 @@ const homepageData = {
       ],
     },
     {
-      type: "standard_row",
+      type: "row",
       title: "Rewatch Classics",
       data: [
         {
