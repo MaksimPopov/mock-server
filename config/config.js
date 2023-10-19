@@ -1,4 +1,3 @@
-const db = require("./database");
 const functions = require("./functions");
 
 const config = {
@@ -12,12 +11,17 @@ const config = {
     {
       route: "/api/home",
       method: "get",
-      output: () => db.homepage,
+      output: (req) => functions.getHome(req),
     },
     {
       route: "/api/movie",
       method: "get",
       output: (req) => functions.getMovie(req),
+    },
+    {
+      route: "/api/auth",
+      method: "post",
+      output: (req) => functions.auth(req),
     },
   ],
 };
