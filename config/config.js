@@ -23,6 +23,11 @@ const config = {
       method: "post",
       output: (req) => functions.auth(req),
     },
+    {
+      route: "/api/metric",
+      method: "post",
+      output: () => {return { message: "success" }},
+    }
   ],
 };
 
