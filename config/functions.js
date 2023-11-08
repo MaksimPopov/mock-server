@@ -1,4 +1,5 @@
 const db = require("./database");
+const Utils = require("../lib/utils");
 
 const DEFAULT_USER = {
   username: "test1",
@@ -51,8 +52,21 @@ const auth = (req) => {
   return { message: "success", username, token: TOKEN };
 };
 
+const search = (req) => {
+  const query = req.query.q || null;
+
+  if (!query)
+    return { error: true, message: "Empty search query has been sent" };
+
+  const re = new RegExp(query);
+  const result = Utils.filterObject(db.movies, (item) => re.test(item.name));
+
+  return result;
+};
+
 module.exports = {
   getMovie,
   auth,
   getHome,
+  search,
 };

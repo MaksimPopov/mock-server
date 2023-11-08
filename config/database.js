@@ -265,7 +265,7 @@ const movies = {
       "https://image.tmdb.org/t/p/original/9SiK63A0hOmn3FiLCEqydtE1ZQW.png",
   },
 };
-https: module.exports = {
+module.exports = {
   homepage,
   movies,
 };

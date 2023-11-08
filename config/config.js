@@ -26,8 +26,15 @@ const config = {
     {
       route: "/api/metric",
       method: "post",
-      output: () => {return { message: "success" }},
-    }
+      output: () => {
+        return { message: "success" };
+      },
+    },
+    {
+      route: "/api/search",
+      method: "get",
+      output: (req) => functions.search(req),
+    },
   ],
 };
 
